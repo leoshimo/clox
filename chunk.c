@@ -53,7 +53,7 @@ static int constantInstruction(const char* name, Chunk* chunk, int offset) {
   printf("%-16s %d '", name, constant);
   printValue(chunk->constants.values[constant]);
   printf("'\n");
-  return constant + 2;
+  return offset + 2;
 }
 
 int disassembleInstruction(Chunk* chunk, int offset) {

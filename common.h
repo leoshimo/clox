@@ -6,5 +6,6 @@
 #include <stdint.h>  // explicit-sized integer types, e.g. uint8_t
 
 #define DEBUG_TRACE_EXECUTION
+#define DEBUG_PRINT_CODE
 
 #endif
