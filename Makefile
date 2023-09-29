@@ -9,7 +9,7 @@ run: clox ## Run clox
 
 build: clox ## Build clox
 
-clox: main.o chunk.o memory.o value.o vm.o
+clox: main.o chunk.o memory.o value.o vm.o compiler.o scanner.o
 	$(CC) -o $(@) $^
 
 format: ## Format
