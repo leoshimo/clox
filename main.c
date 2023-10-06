@@ -49,7 +49,7 @@ static char* readFile(const char* path) {
 }
 
 static void runFile(const char* path) {
-  char* source = readFile(path);
+  char* source           = readFile(path);
   InterpretResult result = interpret(source);
   free(source);
 
